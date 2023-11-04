@@ -1,0 +1,10 @@
+Player
+    Movement
+        Idle
+        Jump
+        Dash
+        Slide
+    Attacks
+        Slide
+        Slash
+        Blast
