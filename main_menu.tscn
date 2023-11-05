@@ -1,6 +1,9 @@
-[gd_scene format=3 uid="uid://d0fu5bue2cvvp"]
+[gd_scene load_steps=2 format=3 uid="uid://d0fu5bue2cvvp"]
+
+[ext_resource type="Script" path="res://main_menu.gd" id="1_rekwt"]
 
 [node name="MainMenu" type="Node2D"]
+script = ExtResource("1_rekwt")
 
 [node name="TitleLabel" type="Label" parent="."]
 offset_left = 19.0
@@ -15,3 +18,5 @@ offset_top = 92.0
 offset_right = 96.0
 offset_bottom = 100.0
 text = "Start"
+
+[connection signal="pressed" from="StartButton" to="." method="_on_start_button_pressed"]
