@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://d0fu5bue2cvvp"]
+
+[node name="MainMenu" type="Node2D"]
+
+[node name="TitleLabel" type="Label" parent="."]
+offset_left = 19.0
+offset_top = 210.0
+offset_right = 157.0
+offset_bottom = 236.0
+text = "Goode Movement"
+
+[node name="StartButton" type="Button" parent="."]
+offset_left = 88.0
+offset_top = 92.0
+offset_right = 96.0
+offset_bottom = 100.0
+text = "Start"
