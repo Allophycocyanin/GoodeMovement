@@ -1309,10 +1309,10 @@ height = 8.0
 script = ExtResource("1_rwr4p")
 
 [node name="Label" type="Label" parent="."]
-offset_left = 91.0
-offset_top = 4.0
-offset_right = 145.0
-offset_bottom = 30.0
+offset_left = 3.0
+offset_top = -1.0
+offset_right = 57.0
+offset_bottom = 25.0
 text = "Level 1"
 
 [node name="TileMap" type="TileMap" parent="."]
@@ -1324,6 +1324,12 @@ layer_0/tile_data = PackedInt32Array(2293760, 1048576, 5, 2293761, 1048576, 5, 2
 [node name="Player" type="CharacterBody2D" parent="."]
 position = Vector2(12, 12)
 script = ExtResource("3_4ugv1")
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+position = Vector2(13, 462)
+zoom = Vector2(2, 2)
+drag_horizontal_enabled = true
+drag_vertical_enabled = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Player"]
 position = Vector2(13, 540)
