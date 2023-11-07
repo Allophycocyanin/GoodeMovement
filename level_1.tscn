@@ -3,6 +3,7 @@
 [ext_resource type="Script" path="res://level_1.gd" id="1_rwr4p"]
 [ext_resource type="Texture2D" uid="uid://6qbxyqcncgd5" path="res://data/images/monochrome_tilemap_transparent.png" id="2_e1215"]
 [ext_resource type="Script" path="res://player.gd" id="3_4ugv1"]
+[ext_resource type="Texture2D" uid="uid://d6t66606lsu2" path="res://data/images/player.png" id="4_walju"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2iml7"]
 resource_name = "Tilemap"
@@ -1286,15 +1287,11 @@ separation = Vector2i(1, 1)
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_2iml7")
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_ivtte"]
-atlas = ExtResource("2_e1215")
-region = Rect2(0, 204, 16, 16)
-
 [sub_resource type="SpriteFrames" id="SpriteFrames_lj04k"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_ivtte")
+"texture": ExtResource("4_walju")
 }],
 "loop": true,
 "name": &"idle",
@@ -1302,7 +1299,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_sdw6c"]
-size = Vector2(6, 9)
+size = Vector2(14, 16)
 
 [node name="Level 1" type="Node2D"]
 script = ExtResource("1_rwr4p")
@@ -1325,8 +1322,8 @@ position = Vector2(12, 12)
 script = ExtResource("3_4ugv1")
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
-position = Vector2(13, 462)
-zoom = Vector2(2, 2)
+position = Vector2(13, 540)
+zoom = Vector2(4, 4)
 drag_horizontal_enabled = true
 drag_vertical_enabled = true
 
@@ -1336,5 +1333,5 @@ sprite_frames = SubResource("SpriteFrames_lj04k")
 animation = &"idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
-position = Vector2(13, 543.5)
+position = Vector2(13, 540)
 shape = SubResource("RectangleShape2D_sdw6c")
