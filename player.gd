@@ -27,7 +27,7 @@ func _physics_process(delta):
 	elif Input.is_action_just_released('sprint'):
 		sprinting = false
 
-	if sprinting:
+	if is_on_floor_only() and sprinting:
 		velocity.x = direction * RUN
 	else:
 		velocity.x = direction * WALK
