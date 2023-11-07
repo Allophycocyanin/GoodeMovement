@@ -21,6 +21,7 @@ Player
 				Level 3 - 5 dash - star
 				Level 4 - 7 dash - super star
 			look at /images/dash_patterns.png for example
+			i frames while in dash
 		Explosion
 			Explosion that has massive blow back to send player flying in
 			opposite direction
@@ -37,7 +38,11 @@ Enemies
 		will fire 3 projectiles then go on cooldown before firing again
 		bullets will home on player
 Bosses
-
+	will be big
+	fire many projectiles
+	boss will barely move
+	player will mainly use dash attack to deal damage
+	
 Art
 	GUI
 	HUD
