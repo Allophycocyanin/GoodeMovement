@@ -1,4 +1,8 @@
 Player
+	Life
+		Players life will be equal to experience
+		If experience less than 0 player dies
+		Player will start at level 1
 	Basic Movement
 		Walk
 		Jump
@@ -12,9 +16,32 @@ Player
 	Attacks
 		Dash
 			Will be able to dash multiple times depening on level
+				Level 1 - 2 dash - right angle
+				Level 2 - 3 dash - triangle
+				Level 3 - 5 dash - star
+				Level 4 - 7 dash - super star
+			look at /images/dash_patterns.png for example
 		Explosion
 			Explosion that has massive blow back to send player flying in
 			opposite direction
 		Slash
 			Slash will damage enemies and block projectiles
 			This will also fill a bar that will manage your experience
+
+Enemies
+	zombie - 
+		walks back and forth
+	bird
+		flys back and forth. will swoop down if player in range
+	turret
+		will fire 3 projectiles then go on cooldown before firing again
+		bullets will home on player
+Bosses
+
+Art
+	GUI
+	HUD
+	Tile
+	Player
+	Enemies
+	Bosses
