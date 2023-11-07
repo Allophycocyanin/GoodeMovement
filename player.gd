@@ -24,6 +24,9 @@ func _physics_process(delta):
 	var direction = Input.get_action_strength("move_right") - Input.get_action_strength("move_left")
 	var sprint_pressed = Input.is_action_just_pressed('sprint')
 
+	if (direction == 0):
+		SPEED -= ACCELERATION
+
 	if sprint_pressed:
 		sprinting = true
 	elif Input.is_action_just_released('sprint'):
