@@ -1,0 +1,20 @@
+Player
+	Basic Movement
+		Walk
+		Jump
+		Sprint
+	Level Up
+		*Killing small enemies will drop experience that will power up your dash
+		*Blocking projectiles will also fill up the meter
+		*Max Level TBA
+		*Being hit will remove a lot of experience leveling down dash
+		*Explosion will level up with time
+	Attacks
+		Dash
+			Will be able to dash multiple times depening on level
+		Explosion
+			Explosion that has massive blow back to send player flying in
+			opposite direction
+		Slash
+			Slash will damage enemies and block projectiles
+			This will also fill a bar that will manage your experience
