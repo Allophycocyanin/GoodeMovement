@@ -1301,9 +1301,8 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_pbu3v"]
-radius = 3.0
-height = 8.0
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sdw6c"]
+size = Vector2(6, 9)
 
 [node name="Level 1" type="Node2D"]
 script = ExtResource("1_rwr4p")
@@ -1337,5 +1336,5 @@ sprite_frames = SubResource("SpriteFrames_lj04k")
 animation = &"idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
-position = Vector2(13, 543)
-shape = SubResource("CapsuleShape2D_pbu3v")
+position = Vector2(13, 543.5)
+shape = SubResource("RectangleShape2D_sdw6c")
