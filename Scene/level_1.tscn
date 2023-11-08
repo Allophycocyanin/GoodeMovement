@@ -1,7 +1,8 @@
-[gd_scene load_steps=9 format=3 uid="uid://b5mpaein6sfpe"]
+[gd_scene load_steps=10 format=3 uid="uid://b5mpaein6sfpe"]
 
 [ext_resource type="Script" path="res://Scripts/level_1.gd" id="1_biv20"]
 [ext_resource type="Texture2D" uid="uid://6qbxyqcncgd5" path="res://Data/images/monochrome_tilemap_transparent.png" id="2_h6byp"]
+[ext_resource type="PackedScene" uid="uid://jovj1ftwtg6c" path="res://Scene/hud_manager.tscn" id="2_kr01b"]
 [ext_resource type="Script" path="res://Scripts/player.gd" id="3_x2dc2"]
 [ext_resource type="Texture2D" uid="uid://d6t66606lsu2" path="res://Data/images/player.png" id="4_gg3ly"]
 
@@ -1303,6 +1304,8 @@ size = Vector2(16, 16)
 
 [node name="Level 1" type="Node2D"]
 script = ExtResource("1_biv20")
+
+[node name="Hud" parent="." instance=ExtResource("2_kr01b")]
 
 [node name="TileMap" type="TileMap" parent="."]
 texture_filter = 1
