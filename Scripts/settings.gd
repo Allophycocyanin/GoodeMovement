@@ -15,3 +15,7 @@ func _input(event):
 
 func _on_fullscreen_pressed():
 	DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_FULLSCREEN)
+
+
+func _on_windowed_pressed():
+	DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_WINDOWED)

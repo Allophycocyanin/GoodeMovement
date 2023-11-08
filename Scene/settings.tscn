@@ -15,10 +15,18 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Fullscreen" type="Button" parent="."]
-offset_top = 241.0
+offset_top = 300.0
 offset_right = 1920.0
-offset_bottom = 424.0
+offset_bottom = 483.0
 theme_override_font_sizes/font_size = 40
 text = "Fullscreen"
 
+[node name="Windowed" type="Button" parent="."]
+offset_top = 500.0
+offset_right = 1920.0
+offset_bottom = 683.0
+theme_override_font_sizes/font_size = 40
+text = "Windowed"
+
 [connection signal="pressed" from="Fullscreen" to="." method="_on_fullscreen_pressed"]
+[connection signal="pressed" from="Windowed" to="." method="_on_windowed_pressed"]

@@ -1,9 +1,9 @@
 [gd_scene load_steps=9 format=3 uid="uid://b5mpaein6sfpe"]
 
 [ext_resource type="Script" path="res://Scripts/level_1.gd" id="1_biv20"]
-[ext_resource type="Texture2D" uid="uid://6qbxyqcncgd5" path="res://data/images/monochrome_tilemap_transparent.png" id="2_h6byp"]
+[ext_resource type="Texture2D" uid="uid://6qbxyqcncgd5" path="res://Data/images/monochrome_tilemap_transparent.png" id="2_h6byp"]
 [ext_resource type="Script" path="res://Scripts/player.gd" id="3_x2dc2"]
-[ext_resource type="Texture2D" uid="uid://d6t66606lsu2" path="res://data/images/player.png" id="4_gg3ly"]
+[ext_resource type="Texture2D" uid="uid://d6t66606lsu2" path="res://Data/images/player.png" id="4_gg3ly"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2iml7"]
 resource_name = "Tilemap"
