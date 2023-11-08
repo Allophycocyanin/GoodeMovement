@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://clnbifphgcf0s"
-path="res://.godot/imported/dash_patterns.png-eaa44c590b6b8844c2aaabc07065a274.ctex"
+path="res://.godot/imported/dash_patterns.png-283953cb53f41fd0761ff786d80b3758.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Data/images/dash_patterns.png"
-dest_files=["res://.godot/imported/dash_patterns.png-eaa44c590b6b8844c2aaabc07065a274.ctex"]
+source_file="res://data/images/dash_patterns.png"
+dest_files=["res://.godot/imported/dash_patterns.png-283953cb53f41fd0761ff786d80b3758.ctex"]
 
 [params]
 

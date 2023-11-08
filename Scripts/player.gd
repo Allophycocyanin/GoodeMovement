@@ -4,7 +4,7 @@ const JUMP_VELOCITY = -350.0
 const WALK = 150
 const RUN = 300
 const ACCELERATION = 10
-var SPEED = 0
+var	speed = 0
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
@@ -27,10 +27,8 @@ func _physics_process(delta):
 		else:
 			velocity.y = JUMP_VELOCITY
 
-
-
 	if (direction == 0):
-		SPEED -= ACCELERATION
+		speed -= ACCELERATION
 
 	if sprint_pressed:
 		sprinting = true
@@ -38,12 +36,12 @@ func _physics_process(delta):
 		sprinting = false
 
 	if sprinting:
-		if(SPEED <= RUN):
-			SPEED += ACCELERATION
-		velocity.x = direction * SPEED
+		if	(speed <= RUN):
+			speed += ACCELERATION
+		velocity.x = direction *	speed
 	else:
-		if(SPEED <= WALK):
-			SPEED += ACCELERATION
-		velocity.x = direction * SPEED
+		if	(speed <= WALK):
+			speed += ACCELERATION
+		velocity.x = direction *	speed
 
 	move_and_slide()
