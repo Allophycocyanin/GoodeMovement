@@ -28,5 +28,8 @@ offset_bottom = 683.0
 theme_override_font_sizes/font_size = 40
 text = "Windowed"
 
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(960, 540)
+
 [connection signal="pressed" from="Fullscreen" to="." method="_on_fullscreen_pressed"]
 [connection signal="pressed" from="Windowed" to="." method="_on_windowed_pressed"]
