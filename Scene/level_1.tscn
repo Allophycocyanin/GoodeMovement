@@ -1306,6 +1306,7 @@ size = Vector2(16, 16)
 script = ExtResource("1_biv20")
 
 [node name="Hud" parent="." instance=ExtResource("2_kr01b")]
+visible = false
 
 [node name="TileMap" type="TileMap" parent="."]
 texture_filter = 1
