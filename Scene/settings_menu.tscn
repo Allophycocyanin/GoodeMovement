@@ -53,3 +53,6 @@ theme_override_font_sizes/font_size = 100
 text = "Settings"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[connection signal="pressed" from="Fullscreen" to="." method="_on_fullscreen_pressed"]
+[connection signal="pressed" from="Windowed" to="." method="_on_windowed_pressed"]
