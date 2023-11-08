@@ -6,9 +6,8 @@
 script = ExtResource("1_pa5j6")
 
 [node name="Label" type="Label" parent="."]
-offset_left = 345.0
 offset_top = 32.0
-offset_right = 1547.0
+offset_right = 1920.0
 offset_bottom = 265.0
 theme_override_font_sizes/font_size = 40
 text = "Settings"
@@ -16,10 +15,9 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Fullscreen" type="Button" parent="."]
-offset_left = 504.0
 offset_top = 241.0
-offset_right = 1426.0
-offset_bottom = 666.0
+offset_right = 1920.0
+offset_bottom = 424.0
 theme_override_font_sizes/font_size = 40
 text = "Fullscreen"
 
