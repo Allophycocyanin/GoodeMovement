@@ -27,6 +27,9 @@ func _on_windowed_pressed():
 [node name="Node2D" type="Node2D"]
 script = SubResource("GDScript_pevtj")
 
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(960, 540)
+
 [node name="Fullscreen" type="Button" parent="."]
 offset_left = 360.0
 offset_top = 500.0
@@ -42,9 +45,6 @@ offset_right = 1640.0
 offset_bottom = 450.0
 theme_override_font_sizes/font_size = 60
 text = "Windowed"
-
-[node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(960, 540)
 
 [node name="SettingsTitle" type="Label" parent="."]
 offset_right = 1920.0
