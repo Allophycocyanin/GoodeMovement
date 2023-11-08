@@ -1304,13 +1304,6 @@ size = Vector2(14, 16)
 [node name="Level 1" type="Node2D"]
 script = ExtResource("1_rwr4p")
 
-[node name="Label" type="Label" parent="."]
-offset_left = 3.0
-offset_top = -1.0
-offset_right = 57.0
-offset_bottom = 25.0
-text = "Level 1"
-
 [node name="TileMap" type="TileMap" parent="."]
 texture_filter = 1
 tile_set = SubResource("TileSet_n75v0")
