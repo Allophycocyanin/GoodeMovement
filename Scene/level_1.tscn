@@ -1,13 +1,13 @@
 [gd_scene load_steps=9 format=3 uid="uid://b5mpaein6sfpe"]
 
-[ext_resource type="Script" path="res://level_1.gd" id="1_rwr4p"]
-[ext_resource type="Texture2D" uid="uid://6qbxyqcncgd5" path="res://data/images/monochrome_tilemap_transparent.png" id="2_e1215"]
-[ext_resource type="Script" path="res://player.gd" id="3_4ugv1"]
-[ext_resource type="Texture2D" uid="uid://d6t66606lsu2" path="res://data/images/player.png" id="4_walju"]
+[ext_resource type="Script" path="res://Scripts/level_1.gd" id="1_biv20"]
+[ext_resource type="Texture2D" uid="uid://6qbxyqcncgd5" path="res://data/images/monochrome_tilemap_transparent.png" id="2_h6byp"]
+[ext_resource type="Script" path="res://Scripts/player.gd" id="3_x2dc2"]
+[ext_resource type="Texture2D" uid="uid://d6t66606lsu2" path="res://data/images/player.png" id="4_gg3ly"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2iml7"]
 resource_name = "Tilemap"
-texture = ExtResource("2_e1215")
+texture = ExtResource("2_h6byp")
 separation = Vector2i(1, 1)
 1:0/0 = 0
 1:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
@@ -1291,7 +1291,7 @@ sources/0 = SubResource("TileSetAtlasSource_2iml7")
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("4_walju")
+"texture": ExtResource("4_gg3ly")
 }],
 "loop": true,
 "name": &"idle",
@@ -1302,7 +1302,7 @@ animations = [{
 size = Vector2(14, 16)
 
 [node name="Level 1" type="Node2D"]
-script = ExtResource("1_rwr4p")
+script = ExtResource("1_biv20")
 
 [node name="Label" type="Label" parent="."]
 offset_left = 3.0
@@ -1319,7 +1319,7 @@ layer_0/tile_data = PackedInt32Array(2293760, 1048576, 5, 2293761, 1048576, 5, 2
 
 [node name="Player" type="CharacterBody2D" parent="."]
 position = Vector2(12, 12)
-script = ExtResource("3_4ugv1")
+script = ExtResource("3_x2dc2")
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 position = Vector2(13, 540)
