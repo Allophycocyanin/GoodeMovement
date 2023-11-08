@@ -9,32 +9,35 @@ font_color = Color(1, 0, 1, 1)
 [node name="MainMenu" type="Node2D"]
 script = ExtResource("1_5ncxf")
 
-[node name="TitleLabel" type="Label" parent="."]
+[node name="Title" type="Label" parent="."]
 offset_right = 1920.0
-offset_bottom = 203.0
+offset_bottom = 200.0
 text = "Goode Movement"
 label_settings = SubResource("LabelSettings_rierb")
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="StartButton" type="Button" parent="."]
+offset_left = 360.0
 offset_top = 200.0
-offset_right = 1920.0
+offset_right = 1640.0
 offset_bottom = 390.0
 theme_override_font_sizes/font_size = 60
 text = "Start"
 
 [node name="SettingsButton" type="Button" parent="."]
+offset_left = 360.0
 offset_top = 500.0
-offset_right = 1920.0
+offset_right = 1640.0
 offset_bottom = 690.0
 theme_override_font_sizes/font_size = 60
 text = "Setting
 "
 
 [node name="QuitButton" type="Button" parent="."]
+offset_left = 360.0
 offset_top = 800.0
-offset_right = 1920.0
+offset_right = 1640.0
 offset_bottom = 990.0
 theme_override_font_sizes/font_size = 60
 text = "Quit"
