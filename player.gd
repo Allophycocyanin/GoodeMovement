@@ -16,13 +16,18 @@ func _physics_process(delta):
 	if not is_on_floor():
 		velocity.y += gravity * delta
 
-	# Handle Jump.
-	if Input.is_action_just_pressed("jump") and is_on_floor():
-		velocity.y = JUMP_VELOCITY
-
 	# Get the input direction and handle the movement/deceleration.
 	var direction = Input.get_action_strength("move_right") - Input.get_action_strength("move_left")
 	var sprint_pressed = Input.is_action_just_pressed('sprint')
+
+	# Handle Jump.
+	if Input.is_action_just_pressed("jump") and is_on_floor():
+		if sprinting:
+			velocity.y = JUMP_VELOCITY - ACCELERATION
+		else:
+			velocity.y = JUMP_VELOCITY
+
+
 
 	if (direction == 0):
 		SPEED -= ACCELERATION
