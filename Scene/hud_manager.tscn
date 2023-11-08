@@ -1,8 +1,23 @@
-[gd_scene format=3 uid="uid://jovj1ftwtg6c"]
+[gd_scene load_steps=3 format=3 uid="uid://jovj1ftwtg6c"]
 
-[node name="Node2D" type="Node2D"]
+[ext_resource type="Texture2D" uid="uid://1uyf335xkubo" path="res://Data/images/hud/exp_bar.png" id="1_ppyp2"]
+[ext_resource type="Texture2D" uid="uid://cbao71y02fniu" path="res://Data/images/hud/exp_bar_fill.png" id="2_8dgem"]
+
+[node name="HudManager" type="Node2D"]
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(960, 540)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Bar" type="HBoxContainer" parent="."]
+offset_left = 30.0
+offset_top = 30.0
+offset_right = 530.0
+offset_bottom = 130.0
+
+[node name="TextureProgressBar" type="TextureProgressBar" parent="Bar"]
+layout_mode = 2
+value = 100.0
+texture_under = ExtResource("1_ppyp2")
+texture_progress = ExtResource("2_8dgem")

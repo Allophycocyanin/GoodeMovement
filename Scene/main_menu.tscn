@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://d0fu5bue2cvvp"]
+[gd_scene load_steps=4 format=3 uid="uid://d0fu5bue2cvvp"]
 
 [ext_resource type="Script" path="res://Scripts/main_menu.gd" id="1_5ncxf"]
+[ext_resource type="FontFile" uid="uid://c7xrt4bv5uykw" path="res://Data/font/Pixel_Text.TTF" id="2_rohsg"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_rierb"]
 font_size = 64
@@ -12,6 +13,7 @@ script = ExtResource("1_5ncxf")
 [node name="Title" type="Label" parent="."]
 offset_right = 1920.0
 offset_bottom = 200.0
+theme_override_fonts/font = ExtResource("2_rohsg")
 text = "Goode Movement"
 label_settings = SubResource("LabelSettings_rierb")
 horizontal_alignment = 1
@@ -22,6 +24,7 @@ offset_left = 360.0
 offset_top = 200.0
 offset_right = 1640.0
 offset_bottom = 390.0
+theme_override_fonts/font = ExtResource("2_rohsg")
 theme_override_font_sizes/font_size = 60
 text = "Start"
 
@@ -30,6 +33,7 @@ offset_left = 360.0
 offset_top = 500.0
 offset_right = 1640.0
 offset_bottom = 690.0
+theme_override_fonts/font = ExtResource("2_rohsg")
 theme_override_font_sizes/font_size = 60
 text = "Setting
 "
@@ -39,6 +43,7 @@ offset_left = 360.0
 offset_top = 800.0
 offset_right = 1640.0
 offset_bottom = 990.0
+theme_override_fonts/font = ExtResource("2_rohsg")
 theme_override_font_sizes/font_size = 60
 text = "Quit"
 
