@@ -1,9 +1,9 @@
 [gd_scene load_steps=5 format=3 uid="uid://jovj1ftwtg6c"]
 
-[ext_resource type="Texture2D" uid="uid://1uyf335xkubo" path="res://Data/images/hud/exp_bar.png" id="1_ppyp2"]
-[ext_resource type="Texture2D" uid="uid://cbao71y02fniu" path="res://Data/images/hud/exp_bar_fill.png" id="2_8dgem"]
-[ext_resource type="Texture2D" uid="uid://da4yhlctsv6pv" path="res://Data/images/hud/charge_bar.png" id="3_d03ic"]
-[ext_resource type="Texture2D" uid="uid://b73t5xdhjsahk" path="res://Data/images/hud/charge_bar_fill.png" id="4_w4eif"]
+[ext_resource type="Texture2D" uid="uid://1uyf335xkubo" path="res://Data/images/hud/bars/exp_bar.png" id="1_ctr5y"]
+[ext_resource type="Texture2D" uid="uid://cbao71y02fniu" path="res://Data/images/hud/bars/exp_bar_fill.png" id="2_pi07n"]
+[ext_resource type="Texture2D" uid="uid://da4yhlctsv6pv" path="res://Data/images/hud/bars/charge_bar.png" id="3_i45p7"]
+[ext_resource type="Texture2D" uid="uid://b73t5xdhjsahk" path="res://Data/images/hud/bars/charge_bar_fill.png" id="4_usleh"]
 
 [node name="HudManager" type="Node2D"]
 
@@ -18,11 +18,11 @@ offset_bottom = 130.0
 [node name="ExpBar" type="TextureProgressBar" parent="Bars"]
 layout_mode = 2
 value = 100.0
-texture_under = ExtResource("1_ppyp2")
-texture_progress = ExtResource("2_8dgem")
+texture_under = ExtResource("1_ctr5y")
+texture_progress = ExtResource("2_pi07n")
 
 [node name="ChargeBar" type="TextureProgressBar" parent="Bars"]
 layout_mode = 2
 value = 100.0
-texture_under = ExtResource("3_d03ic")
-texture_progress = ExtResource("4_w4eif")
+texture_under = ExtResource("3_i45p7")
+texture_progress = ExtResource("4_usleh")

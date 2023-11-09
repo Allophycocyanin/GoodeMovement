@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b73t5xdhjsahk"
-path="res://.godot/imported/charge_bar_fill.png-02abe37b3e652f5093f678a67e4ac08b.ctex"
+uid="uid://clbrlbmcehjxe"
+path="res://.godot/imported/Level_2.png-81a23b7c89a40d4776af97110d85e0c6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Data/images/hud/charge_bar_fill.png"
-dest_files=["res://.godot/imported/charge_bar_fill.png-02abe37b3e652f5093f678a67e4ac08b.ctex"]
+source_file="res://Data/images/hud/dash_attack/Level_2.png"
+dest_files=["res://.godot/imported/Level_2.png-81a23b7c89a40d4776af97110d85e0c6.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dveurodiiwauk"
-path="res://.godot/imported/Level_3.png-655e6a2190e24a7748fcfa64ee4e7f78.ctex"
+uid="uid://6qbxyqcncgd5"
+path="res://.godot/imported/monochrome_tilemap_transparent.png-2d867d459af7cf8a774da62f3622ec6b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Data/images/dash_attack/Level_3.png"
-dest_files=["res://.godot/imported/Level_3.png-655e6a2190e24a7748fcfa64ee4e7f78.ctex"]
+source_file="res://Data/images/tiles/monochrome_tilemap_transparent.png"
+dest_files=["res://.godot/imported/monochrome_tilemap_transparent.png-2d867d459af7cf8a774da62f3622ec6b.ctex"]
 
 [params]
 
