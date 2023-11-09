@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://d4e6mqfqaso6j"]
+[gd_scene load_steps=4 format=3 uid="uid://d4e6mqfqaso6j"]
 
-[ext_resource type="FontFile" uid="uid://c7xrt4bv5uykw" path="res://Data/font/Pixel_Text.TTF" id="1_62ocu"]
+[ext_resource type="FontFile" uid="uid://c7xrt4bv5uykw" path="res://data/font/Pixel_Text.TTF" id="1_62ocu"]
+[ext_resource type="Theme" uid="uid://bsklovieleled" path="res://data/images/gui/defualt_1.tres" id="1_yx4yd"]
 
 [sub_resource type="GDScript" id="GDScript_pevtj"]
 script/source = "extends Node2D
@@ -9,6 +10,7 @@ script/source = "extends Node2D
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	print('Settings loaded')
+	$VBoxContainer/Windowed.grab_focus()
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -27,28 +29,11 @@ func _on_windowed_pressed():
 "
 
 [node name="Node2D" type="Node2D"]
+position = Vector2(0, 128)
 script = SubResource("GDScript_pevtj")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(960, 540)
-
-[node name="Fullscreen" type="Button" parent="."]
-offset_left = 320.0
-offset_top = 500.0
-offset_right = 1600.0
-offset_bottom = 700.0
-theme_override_fonts/font = ExtResource("1_62ocu")
-theme_override_font_sizes/font_size = 60
-text = "Fullsecreen"
-
-[node name="Windowed" type="Button" parent="."]
-offset_left = 320.0
-offset_top = 250.0
-offset_right = 1600.0
-offset_bottom = 450.0
-theme_override_fonts/font = ExtResource("1_62ocu")
-theme_override_font_sizes/font_size = 60
-text = "Windowed"
+position = Vector2(960, 412)
 
 [node name="SettingsTitle" type="Label" parent="."]
 offset_right = 1920.0
@@ -59,5 +44,35 @@ text = "Settings"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[connection signal="pressed" from="Fullscreen" to="." method="_on_fullscreen_pressed"]
-[connection signal="pressed" from="Windowed" to="." method="_on_windowed_pressed"]
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 320.0
+offset_top = 256.0
+offset_right = 1600.0
+offset_bottom = 711.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_yx4yd")
+theme_override_constants/separation = 75
+alignment = 1
+
+[node name="Windowed" type="Button" parent="VBoxContainer"]
+custom_minimum_size = Vector2(1280, 190)
+layout_mode = 2
+theme = ExtResource("1_yx4yd")
+theme_override_fonts/font = ExtResource("1_62ocu")
+theme_override_font_sizes/font_size = 60
+text = "Windowed"
+
+[node name="Fullscreen" type="Button" parent="VBoxContainer"]
+custom_minimum_size = Vector2(1280, 190)
+layout_mode = 2
+theme = ExtResource("1_yx4yd")
+theme_override_fonts/font = ExtResource("1_62ocu")
+theme_override_font_sizes/font_size = 60
+text = "Fullsecreen"
+
+[connection signal="pressed" from="VBoxContainer/Windowed" to="." method="_on_windowed_pressed"]
+[connection signal="pressed" from="VBoxContainer/Fullscreen" to="." method="_on_fullscreen_pressed"]

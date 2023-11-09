@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c0cdbmwh7qam2"
-path="res://.godot/imported/player_wip.png-6675909541355b343d92108dff2f3175.ctex"
+uid="uid://tu5ds2kr7170"
+path="res://.godot/imported/focus.png-c44c7c64e5e958e17b7c52ff26a41344.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/images/entities/player_wip.png"
-dest_files=["res://.godot/imported/player_wip.png-6675909541355b343d92108dff2f3175.ctex"]
+source_file="res://data/images/gui/focus.png"
+dest_files=["res://.godot/imported/focus.png-c44c7c64e5e958e17b7c52ff26a41344.ctex"]
 
 [params]
 

@@ -2,9 +2,9 @@
 
 [ext_resource type="Script" path="res://Scripts/level_1.gd" id="1_biv20"]
 [ext_resource type="PackedScene" uid="uid://jovj1ftwtg6c" path="res://Scene/hud_manager.tscn" id="2_kr01b"]
-[ext_resource type="Texture2D" uid="uid://6qbxyqcncgd5" path="res://Data/images/tiles/monochrome_tilemap_transparent.png" id="3_djg1w"]
+[ext_resource type="Texture2D" uid="uid://6qbxyqcncgd5" path="res://data/images/tiles/monochrome_tilemap_transparent.png" id="3_djg1w"]
 [ext_resource type="Script" path="res://Scripts/player.gd" id="3_x2dc2"]
-[ext_resource type="Texture2D" uid="uid://c0cdbmwh7qam2" path="res://Data/images/Entities/player_wip.png" id="5_3278n"]
+[ext_resource type="Texture2D" uid="uid://c0cdbmwh7qam2" path="res://data/images/Entities/player_wip.png" id="5_3278n"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2iml7"]
 resource_name = "Tilemap"
