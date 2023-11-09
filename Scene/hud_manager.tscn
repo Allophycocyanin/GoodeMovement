@@ -1,18 +1,19 @@
-[gd_scene load_steps=5 format=3 uid="uid://jovj1ftwtg6c"]
+[gd_scene load_steps=6 format=3 uid="uid://jovj1ftwtg6c"]
 
 [ext_resource type="Texture2D" uid="uid://1uyf335xkubo" path="res://Data/images/hud/bars/exp_bar.png" id="1_ctr5y"]
 [ext_resource type="Texture2D" uid="uid://cbao71y02fniu" path="res://Data/images/hud/bars/exp_bar_fill.png" id="2_pi07n"]
 [ext_resource type="Texture2D" uid="uid://da4yhlctsv6pv" path="res://Data/images/hud/bars/charge_bar.png" id="3_i45p7"]
 [ext_resource type="Texture2D" uid="uid://b73t5xdhjsahk" path="res://Data/images/hud/bars/charge_bar_fill.png" id="4_usleh"]
+[ext_resource type="Texture2D" uid="uid://dgcex2rmr7img" path="res://data/images/hud/dash_attack/Level_4.png" id="5_o8gc5"]
 
 [node name="HudManager" type="Node2D"]
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="Bars" type="HBoxContainer" parent="."]
-offset_left = 30.0
+offset_left = 300.0
 offset_top = 30.0
-offset_right = 530.0
+offset_right = 1304.0
 offset_bottom = 130.0
 
 [node name="ExpBar" type="TextureProgressBar" parent="Bars"]
@@ -26,3 +27,7 @@ layout_mode = 2
 value = 100.0
 texture_under = ExtResource("3_i45p7")
 texture_progress = ExtResource("4_usleh")
+
+[node name="Level4" type="Sprite2D" parent="."]
+position = Vector2(204, 75)
+texture = ExtResource("5_o8gc5")
