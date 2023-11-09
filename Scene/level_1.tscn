@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://6qbxyqcncgd5" path="res://Data/images/monochrome_tilemap_transparent.png" id="2_h6byp"]
 [ext_resource type="PackedScene" uid="uid://jovj1ftwtg6c" path="res://Scene/hud_manager.tscn" id="2_kr01b"]
 [ext_resource type="Script" path="res://Scripts/player.gd" id="3_x2dc2"]
-[ext_resource type="Texture2D" uid="uid://d6t66606lsu2" path="res://Data/images/player.png" id="4_gg3ly"]
+[ext_resource type="Texture2D" uid="uid://c0cdbmwh7qam2" path="res://Data/images/Entities/player_wip.png" id="5_3278n"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2iml7"]
 resource_name = "Tilemap"
@@ -1292,7 +1292,7 @@ sources/0 = SubResource("TileSetAtlasSource_2iml7")
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("4_gg3ly")
+"texture": ExtResource("5_3278n")
 }],
 "loop": true,
 "name": &"idle",
@@ -1300,7 +1300,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_sdw6c"]
-size = Vector2(16, 16)
+size = Vector2(11.5, 16)
 
 [node name="Level 1" type="Node2D"]
 script = ExtResource("1_biv20")
@@ -1329,5 +1329,5 @@ sprite_frames = SubResource("SpriteFrames_lj04k")
 animation = &"idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
-position = Vector2(13, 540)
+position = Vector2(12.25, 540)
 shape = SubResource("RectangleShape2D_sdw6c")

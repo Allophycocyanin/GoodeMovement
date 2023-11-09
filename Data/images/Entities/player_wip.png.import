@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://clnbifphgcf0s"
-path="res://.godot/imported/dash_patterns.png-eaa44c590b6b8844c2aaabc07065a274.ctex"
+uid="uid://c0cdbmwh7qam2"
+path="res://.godot/imported/player_wip.png-219ce6cca5ae7443ae08db78f9e40f00.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Data/images/dash_patterns.png"
-dest_files=["res://.godot/imported/dash_patterns.png-eaa44c590b6b8844c2aaabc07065a274.ctex"]
+source_file="res://Data/images/Entities/player_wip.png"
+dest_files=["res://.godot/imported/player_wip.png-219ce6cca5ae7443ae08db78f9e40f00.ctex"]
 
 [params]
 
