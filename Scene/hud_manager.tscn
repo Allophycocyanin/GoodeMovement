@@ -5,10 +5,6 @@
 
 [node name="HudManager" type="Node2D"]
 
-[node name="Camera2D" type="Camera2D" parent="."]
-visible = false
-position = Vector2(960, 540)
-
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="Bar" type="HBoxContainer" parent="."]
