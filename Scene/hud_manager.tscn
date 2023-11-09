@@ -10,7 +10,6 @@
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="Bars" type="HBoxContainer" parent="."]
-anchors_preset = -1
 offset_left = 33.0
 offset_top = 15.0
 offset_right = 1083.0
