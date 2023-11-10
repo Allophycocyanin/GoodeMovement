@@ -44,12 +44,14 @@ func _physics_process(delta):
 			speed += ACCELERATION
 		velocity.x = direction *	speed
 	
+	# player_animation()
+	move_and_slide()
+	
 	# Handles Movement Animation
+func player_animation():
 	if velocity.x > 0:
 		$AnimatedSprite2D.play("walk_right")
 	elif velocity.x < 0:
 		$AnimatedSprite2D.play('walk_left')
 	else:
 		$AnimatedSprite2D.play('fall')
-		
-	move_and_slide()

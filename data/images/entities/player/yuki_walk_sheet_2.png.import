@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://by8j7j0137uej"
-path="res://.godot/imported/yuki_walk_sheet_2.png-de2ea985e31500e74851bf2593178d0f.ctex"
+path="res://.godot/imported/yuki_walk_sheet_2.png-f6abb02f335faabd6317930b915d6ef8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/images/entities/player/yuki_walk_sheet_2.png"
-dest_files=["res://.godot/imported/yuki_walk_sheet_2.png-de2ea985e31500e74851bf2593178d0f.ctex"]
+source_file="res://data/images/Entities/player/yuki_walk_sheet_2.png"
+dest_files=["res://.godot/imported/yuki_walk_sheet_2.png-f6abb02f335faabd6317930b915d6ef8.ctex"]
 
 [params]
 
