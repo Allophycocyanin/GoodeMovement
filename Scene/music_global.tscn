@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://betql1upfvvnu"]
+
+[ext_resource type="Script" path="res://Scripts/music_global.gd" id="1_hnkbn"]
+[ext_resource type="AudioStream" uid="uid://cvhp6sem7wod2" path="res://data/audio/music/thumping_around.wav" id="2_klltx"]
+
+[node name="MusicGlobal" type="Node2D"]
+script = ExtResource("1_hnkbn")
+
+[node name="Music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_klltx")
+autoplay = true

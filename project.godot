@@ -17,7 +17,7 @@ config/icon="res://icon.svg"
 
 [autoload]
 
-MenuAll="*res://menu_all.tscn"
+MusicGlobal="*res://Scene/music_global.tscn"
 
 [display]
 

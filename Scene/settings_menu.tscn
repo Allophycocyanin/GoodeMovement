@@ -6,23 +6,18 @@
 [sub_resource type="GDScript" id="GDScript_pevtj"]
 script/source = "extends Node2D
 
-
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	print('Settings loaded')
 	$VBoxContainer/Windowed.grab_focus()
-
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _input(event):
 	if event.is_action_pressed(\"return_to_main_menu\"):
 		get_tree().change_scene_to_file('res://Scene/main_menu.tscn')
 
-
-
 func _on_fullscreen_pressed():
 	DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_FULLSCREEN)
-
 
 func _on_windowed_pressed():
 	DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_WINDOWED)
