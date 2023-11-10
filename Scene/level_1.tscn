@@ -1,10 +1,12 @@
-[gd_scene load_steps=10 format=3 uid="uid://b5mpaein6sfpe"]
+[gd_scene load_steps=20 format=3 uid="uid://b5mpaein6sfpe"]
 
 [ext_resource type="Script" path="res://Scripts/level_1.gd" id="1_biv20"]
 [ext_resource type="PackedScene" uid="uid://jovj1ftwtg6c" path="res://Scene/hud_manager.tscn" id="2_kr01b"]
 [ext_resource type="Texture2D" uid="uid://6qbxyqcncgd5" path="res://data/images/tiles/monochrome_tilemap_transparent.png" id="3_djg1w"]
 [ext_resource type="Script" path="res://Scripts/player.gd" id="3_x2dc2"]
-[ext_resource type="Texture2D" uid="uid://c0cdbmwh7qam2" path="res://data/images/entities/player/player_wip.png" id="5_moj5r"]
+[ext_resource type="Texture2D" uid="uid://by8j7j0137uej" path="res://data/images/entities/player/yuki_walk_sheet_2.png" id="5_p8hdd"]
+[ext_resource type="Texture2D" uid="uid://ucw1tjrf8prx" path="res://data/images/entities/player/yuki_walk_sheet.png" id="5_tieis"]
+[ext_resource type="Texture2D" uid="uid://dwkgl2snjwdo1" path="res://data/images/entities/player/yuki_approves.png" id="5_u1lsr"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2iml7"]
 resource_name = "Tilemap"
@@ -1288,19 +1290,85 @@ separation = Vector2i(1, 1)
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_2iml7")
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_xn64e"]
+atlas = ExtResource("5_p8hdd")
+region = Rect2(0, 0, 552, 777)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mwxfx"]
+atlas = ExtResource("5_p8hdd")
+region = Rect2(552, 0, 552, 777)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hrt4i"]
+atlas = ExtResource("5_p8hdd")
+region = Rect2(1104, 0, 552, 777)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5nvrf"]
+atlas = ExtResource("5_p8hdd")
+region = Rect2(1656, 0, 552, 777)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e373v"]
+atlas = ExtResource("5_tieis")
+region = Rect2(0, 0, 450, 777)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vscsd"]
+atlas = ExtResource("5_tieis")
+region = Rect2(530, 0, 450, 777)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ncgtm"]
+atlas = ExtResource("5_tieis")
+region = Rect2(1140, 0, 450, 777)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_30rk2"]
+atlas = ExtResource("5_tieis")
+region = Rect2(1750, 0, 450, 777)
+
 [sub_resource type="SpriteFrames" id="SpriteFrames_lj04k"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("5_moj5r")
+"texture": ExtResource("5_u1lsr")
 }],
 "loop": true,
-"name": &"idle",
+"name": &"fall",
 "speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xn64e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mwxfx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hrt4i")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5nvrf")
+}],
+"loop": true,
+"name": &"walk_left",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e373v")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vscsd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ncgtm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_30rk2")
+}],
+"loop": true,
+"name": &"walk_right",
+"speed": 3.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_sdw6c"]
-size = Vector2(11.5, 16)
+size = Vector2(18, 31)
 
 [node name="Level 1" type="Node2D"]
 script = ExtResource("1_biv20")
@@ -1318,16 +1386,17 @@ position = Vector2(12, 12)
 script = ExtResource("3_x2dc2")
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
-position = Vector2(13, 499)
+position = Vector2(13, 518)
 zoom = Vector2(4, 4)
 drag_horizontal_enabled = true
 drag_vertical_enabled = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Player"]
-position = Vector2(13, 540)
+position = Vector2(12, 533)
+scale = Vector2(0.04, 0.041184)
 sprite_frames = SubResource("SpriteFrames_lj04k")
-animation = &"idle"
+animation = &"fall"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
-position = Vector2(12.25, 540)
+position = Vector2(12, 532.5)
 shape = SubResource("RectangleShape2D_sdw6c")

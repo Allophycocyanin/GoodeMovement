@@ -6,6 +6,7 @@ const RUN = 300
 const ACCELERATION = 10
 var	speed = 0
 
+
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 
@@ -43,5 +44,13 @@ func _physics_process(delta):
 		if	(speed <= WALK):
 			speed += ACCELERATION
 		velocity.x = direction *	speed
-
+	
+	# Handles Movement Animation
+	if velocity.x > 0:
+		$AnimatedSprite2D.play("walk_right")
+	elif velocity.x < 0:
+		$AnimatedSprite2D.play('walk_left')
+	else:
+		$AnimatedSprite2D.play('fall')
+		
 	move_and_slide()
