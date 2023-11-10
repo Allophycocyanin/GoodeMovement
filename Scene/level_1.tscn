@@ -1,12 +1,13 @@
-[gd_scene load_steps=20 format=3 uid="uid://b5mpaein6sfpe"]
+[gd_scene load_steps=21 format=3 uid="uid://b5mpaein6sfpe"]
 
 [ext_resource type="Script" path="res://Scripts/level_1.gd" id="1_biv20"]
 [ext_resource type="PackedScene" uid="uid://jovj1ftwtg6c" path="res://Scene/hud_manager.tscn" id="2_kr01b"]
 [ext_resource type="Texture2D" uid="uid://6qbxyqcncgd5" path="res://data/images/tiles/monochrome_tilemap_transparent.png" id="3_djg1w"]
 [ext_resource type="Script" path="res://Scripts/player.gd" id="3_x2dc2"]
-[ext_resource type="Texture2D" uid="uid://by8j7j0137uej" path="res://data/images/entities/player/yuki_walk_sheet_2.png" id="5_p8hdd"]
-[ext_resource type="Texture2D" uid="uid://ucw1tjrf8prx" path="res://data/images/entities/player/yuki_walk_sheet.png" id="5_tieis"]
-[ext_resource type="Texture2D" uid="uid://dwkgl2snjwdo1" path="res://data/images/entities/player/yuki_approves.png" id="5_u1lsr"]
+[ext_resource type="Texture2D" uid="uid://by8j7j0137uej" path="res://data/images/Entities/player/yuki_walk_sheet_2.png" id="5_p8hdd"]
+[ext_resource type="Texture2D" uid="uid://ucw1tjrf8prx" path="res://data/images/Entities/player/yuki_walk_sheet.png" id="5_tieis"]
+[ext_resource type="Texture2D" uid="uid://dwkgl2snjwdo1" path="res://data/images/Entities/player/yuki_approves.png" id="5_u1lsr"]
+[ext_resource type="AudioStream" uid="uid://cwwcvuslj4iyy" path="res://data/audio/music/vanilla_roll.wav" id="8_61lqd"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2iml7"]
 resource_name = "Tilemap"
@@ -1400,3 +1401,8 @@ animation = &"fall"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
 position = Vector2(12, 532.5)
 shape = SubResource("RectangleShape2D_sdw6c")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("8_61lqd")
+autoplay = true
+stream_paused = true
