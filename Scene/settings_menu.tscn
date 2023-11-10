@@ -28,7 +28,7 @@ func _on_windowed_pressed():
 	DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_WINDOWED)
 "
 
-[node name="Node2D" type="Node2D"]
+[node name="SettingsMenu" type="Node2D"]
 position = Vector2(0, 128)
 script = SubResource("GDScript_pevtj")
 

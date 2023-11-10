@@ -5,6 +5,7 @@ extends Node2D
 func _ready():
 	print('Main Menu Ready')
 	$VBoxContainer/StartButton.grab_focus()
+	MenuAll.play_music
 	
 	# Disable mouse input
 	DisplayServer.mouse_set_mode(DisplayServer.MOUSE_MODE_HIDDEN)

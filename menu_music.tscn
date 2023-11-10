@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://bx0lsw3ouore4"]
+
+[ext_resource type="AudioStream" uid="uid://cvhp6sem7wod2" path="res://data/audio/music/thumping_around.wav" id="1_4appd"]
+
+[node name="MenuMusic" type="Node2D"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("1_4appd")
+autoplay = true

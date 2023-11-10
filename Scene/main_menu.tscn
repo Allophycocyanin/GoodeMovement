@@ -1,9 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://d0fu5bue2cvvp"]
+[gd_scene load_steps=5 format=3 uid="uid://d0fu5bue2cvvp"]
 
 [ext_resource type="Script" path="res://Scripts/main_menu.gd" id="1_5ncxf"]
 [ext_resource type="FontFile" uid="uid://c7xrt4bv5uykw" path="res://data/font/Pixel_Text.TTF" id="2_rohsg"]
 [ext_resource type="Theme" uid="uid://bsklovieleled" path="res://data/images/gui/defualt_1.tres" id="3_p4f2c"]
-[ext_resource type="AudioStream" uid="uid://cvhp6sem7wod2" path="res://data/audio/music/thumping_around.wav" id="4_hycje"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_rierb"]
 font_size = 64
@@ -59,11 +58,6 @@ theme = ExtResource("3_p4f2c")
 theme_override_fonts/font = ExtResource("2_rohsg")
 theme_override_font_sizes/font_size = 60
 text = "QUIT"
-
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("4_hycje")
-autoplay = true
-stream_paused = true
 
 [connection signal="pressed" from="VBoxContainer/StartButton" to="." method="_on_start_button_pressed"]
 [connection signal="pressed" from="VBoxContainer/SettingsButton" to="." method="_on_settings_button_pressed"]
