@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dwkgl2snjwdo1"
-path="res://.godot/imported/yuki_approves.png-69da9beaaf92334110c359a9ace21253.ctex"
+path="res://.godot/imported/yuki_approves.png-26190d02af4b258f7b8e44adf4447be8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/images/Entities/player/yuki_approves.png"
-dest_files=["res://.godot/imported/yuki_approves.png-69da9beaaf92334110c359a9ace21253.ctex"]
+source_file="res://data/images/entities/player/yuki_approves.png"
+dest_files=["res://.godot/imported/yuki_approves.png-26190d02af4b258f7b8e44adf4447be8.ctex"]
 
 [params]
 
