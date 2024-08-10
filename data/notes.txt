@@ -4,9 +4,8 @@ Player
 		If experience less than 0 player dies
 		Player will start at level 1
 	Basic Movement
-		Walk
-		Jump
-		Sprint
+		Coyote jump
+		Fix sprint
 	Level Up
 		*Killing small enemies will drop experience that will power up your dash
 		*Blocking projectiles will also fill up the meter
