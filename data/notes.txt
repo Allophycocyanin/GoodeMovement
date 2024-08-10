@@ -14,7 +14,7 @@ Player
 		*Explosion will level up with time
 	Attacks
 		Dash
-			Will be able to dash multiple times depening on level
+			Will be able to dash multiple times depending on player level
 				Level 1 - 2 dash - right angle
 				Level 2 - 3 dash - triangle
 				Level 3 - 5 dash - star
