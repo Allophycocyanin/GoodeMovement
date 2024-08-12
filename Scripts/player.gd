@@ -1,5 +1,8 @@
 extends CharacterBody2D
 
+#==================================================================================================
+# Variables
+#==================================================================================================
 @export var Coyote_Time: float = 0.05
 const JUMP_VELOCITY = -350.0
 const WALK = 150
@@ -7,13 +10,16 @@ const RUN = 250
 const ACCELERATION = 7
 var	speed = 0
 var Jump_Available: bool = true
+var sprinting = false
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
-var sprinting = false
+
 
 func _physics_process(delta):
-	# Add the gravity.
+	#==============================================================================================
+	# Gravity Manager
+	#==============================================================================================
 	if not is_on_floor():
 		if Jump_Available:
 			get_tree().create_timer(Coyote_Time).timeout.connect(Coyote_Timeout)
@@ -23,10 +29,14 @@ func _physics_process(delta):
 		Jump_Available = true
 
 	# Get the input direction and handle the movement/deceleration.
-	var direction = Input.get_action_strength("move_right") - Input.get_action_strength("move_left")
+	var direction: float = Input.get_action_strength("move_right") \
+					- Input.get_action_strength("move_left")
+	
 	var sprint_pressed = Input.is_action_just_pressed('sprint')
-
-	# Handle Jump.
+	
+	#==============================================================================================
+	# Jump Manager
+	#==============================================================================================
 	if Input.is_action_just_pressed("jump") and Jump_Available:
 		Jump_Available = false
 		if sprinting:
@@ -34,9 +44,17 @@ func _physics_process(delta):
 		else:
 			velocity.y = JUMP_VELOCITY
 
-	if (direction == 0):
-		speed -= ACCELERATION
-
+	#==============================================================================================
+	# Decceleration
+	#==============================================================================================
+	if (direction == 0.0 && speed > 0):
+		print("direction detected")
+		speed = speed - ACCELERATION
+		print("new speed ", speed)
+	
+	#==============================================================================================
+	# Sprint Manager
+	#==============================================================================================
 	if sprint_pressed:
 		sprinting = true
 	elif Input.is_action_just_released('sprint'):
@@ -45,13 +63,13 @@ func _physics_process(delta):
 	if sprinting:
 		if	(speed <= RUN):
 			speed += ACCELERATION
-		velocity.x = direction *	speed
+		velocity.x = direction * speed
 	else:
-		if	(speed <= WALK):
+		if	(speed <= WALK && (direction > 0.0 || direction < 0.0)):
 			speed += ACCELERATION
-		velocity.x = direction *	speed
-	
-	# player_animation()
+		velocity.x = direction * speed
+		
+	print("X: ", velocity.x, ", Speed: ", speed, ", Direction: ", direction)
 	move_and_slide()
 
 func Coyote_Timeout():

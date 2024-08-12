@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://bj5av5xyykaau"
-path="res://.godot/imported/moon_lit_clouds.wav-2352c44e2c24222f4fcb7d84bf84a366.sample"
+path="res://.godot/imported/moon_lit_clouds.wav-e01963724963ed17c8034cf94f6976bb.sample"
 
 [deps]
 
-source_file="res://Data/audio/music/moon_lit_clouds.wav"
-dest_files=["res://.godot/imported/moon_lit_clouds.wav-2352c44e2c24222f4fcb7d84bf84a366.sample"]
+source_file="res://data/audio/music/moon_lit_clouds.wav"
+dest_files=["res://.godot/imported/moon_lit_clouds.wav-e01963724963ed17c8034cf94f6976bb.sample"]
 
 [params]
 
