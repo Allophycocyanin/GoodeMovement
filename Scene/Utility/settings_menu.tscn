@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://d4e6mqfqaso6j"]
 
-[ext_resource type="FontFile" uid="uid://c7xrt4bv5uykw" path="res://data/font/Pixel_Text.TTF" id="1_62ocu"]
-[ext_resource type="Theme" uid="uid://bsklovieleled" path="res://data/images/gui/defualt_1.tres" id="1_yx4yd"]
+[ext_resource type="FontFile" uid="uid://c7xrt4bv5uykw" path="res://Data/font/Pixel_Text.TTF" id="1_62ocu"]
+[ext_resource type="Theme" uid="uid://bsklovieleled" path="res://Data/images/gui/defualt_1.tres" id="1_yx4yd"]
 
 [sub_resource type="GDScript" id="GDScript_pevtj"]
 script/source = "extends Node2D
@@ -14,7 +14,7 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _input(event):
 	if event.is_action_pressed(\"return_to_main_menu\"):
-		get_tree().change_scene_to_file('res://Scene/main_menu.tscn')
+		get_tree().change_scene_to_file('res://Scene/Utility/main_menu.tscn')
 
 func _on_fullscreen_pressed():
 	DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_FULLSCREEN)

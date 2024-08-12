@@ -1,9 +1,9 @@
 [gd_resource type="Theme" load_steps=10 format=3 uid="uid://bsklovieleled"]
 
-[ext_resource type="FontFile" uid="uid://c7xrt4bv5uykw" path="res://data/font/Pixel_Text.TTF" id="1_ro5jy"]
-[ext_resource type="Texture2D" uid="uid://tu5ds2kr7170" path="res://data/images/gui/focus.png" id="2_bnqy7"]
-[ext_resource type="Texture2D" uid="uid://cl2hrgl5jb2tj" path="res://data/images/gui/normal.png" id="2_pv28c"]
-[ext_resource type="Texture2D" uid="uid://b1ivqlut3ns4m" path="res://data/images/gui/pressed.png" id="3_py5te"]
+[ext_resource type="FontFile" uid="uid://c7xrt4bv5uykw" path="res://Data/font/Pixel_Text.TTF" id="1_ro5jy"]
+[ext_resource type="Texture2D" uid="uid://tu5ds2kr7170" path="res://Data/images/gui/focus.png" id="2_bnqy7"]
+[ext_resource type="Texture2D" uid="uid://cl2hrgl5jb2tj" path="res://Data/images/gui/normal.png" id="2_pv28c"]
+[ext_resource type="Texture2D" uid="uid://b1ivqlut3ns4m" path="res://Data/images/gui/pressed.png" id="3_py5te"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_setsq"]
 

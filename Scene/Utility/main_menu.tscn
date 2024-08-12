@@ -1,8 +1,8 @@
 [gd_scene load_steps=5 format=3 uid="uid://d0fu5bue2cvvp"]
 
 [ext_resource type="Script" path="res://Scripts/main_menu.gd" id="1_5ncxf"]
-[ext_resource type="FontFile" uid="uid://c7xrt4bv5uykw" path="res://data/font/Pixel_Text.TTF" id="2_rohsg"]
-[ext_resource type="Theme" uid="uid://bsklovieleled" path="res://data/images/gui/defualt_1.tres" id="3_p4f2c"]
+[ext_resource type="FontFile" uid="uid://c7xrt4bv5uykw" path="res://Data/font/Pixel_Text.TTF" id="2_rohsg"]
+[ext_resource type="Theme" uid="uid://bsklovieleled" path="res://Data/images/gui/defualt_1.tres" id="3_p4f2c"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_rierb"]
 font_size = 64
