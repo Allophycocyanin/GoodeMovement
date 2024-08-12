@@ -1299,9 +1299,6 @@ separation = Vector2i(1, 1)
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_2iml7")
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_sdw6c"]
-size = Vector2(18, 16)
-
 [sub_resource type="AtlasTexture" id="AtlasTexture_xn64e"]
 atlas = ExtResource("5_p8hdd")
 region = Rect2(0, 0, 552, 777)
@@ -1379,6 +1376,9 @@ animations = [{
 "speed": 3.0
 }]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sdw6c"]
+size = Vector2(18, 16)
+
 [node name="Level 1" type="Node2D"]
 script = ExtResource("1_biv20")
 
@@ -1392,10 +1392,6 @@ layer_0/tile_data = PackedInt32Array(2293760, 1048576, 5, 2293761, 1048576, 5, 2
 [node name="Player" type="CharacterBody2D" parent="." groups=["Player"]]
 position = Vector2(12, 19)
 script = ExtResource("3_x2dc2")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Player" groups=["Player"]]
-position = Vector2(12, 533)
-shape = SubResource("RectangleShape2D_sdw6c")
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 position = Vector2(12, 520)

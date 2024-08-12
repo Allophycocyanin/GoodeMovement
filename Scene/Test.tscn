@@ -1,0 +1,37 @@
+[gd_scene load_steps=5 format=3 uid="uid://dnj3fg52313ts"]
+
+[ext_resource type="Script" path="res://Scene/Ship.gd" id="1_q3jth"]
+[ext_resource type="Texture2D" uid="uid://bcqgtkh3edygj" path="res://data/images/Entities/player/P-green-a.png" id="2_appi8"]
+[ext_resource type="Texture2D" uid="uid://hbwjeignfhah" path="res://data/images/Entities/player/CharOne.png" id="3_fktwi"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5vswb"]
+size = Vector2(41.5, 39.5)
+
+[node name="Test" type="Node2D"]
+
+[node name="Ship" type="Node2D" parent="."]
+position = Vector2(984, 535)
+script = ExtResource("1_q3jth")
+
+[node name="P-green-a" type="Sprite2D" parent="Ship"]
+texture = ExtResource("2_appi8")
+
+[node name="Timer" type="Timer" parent="Ship"]
+wait_time = 3.0
+autostart = true
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(963, 525)
+zoom = Vector2(0.71, 0.71)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2(974, -30)
+
+[node name="CharOne" type="Sprite2D" parent="StaticBody2D"]
+texture = ExtResource("3_fktwi")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(-1, 6)
+shape = SubResource("RectangleShape2D_5vswb")
+
+[connection signal="timeout" from="Ship/Timer" to="Ship" method="_on_timer_timeout"]
