@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c0cdbmwh7qam2"
-path="res://.godot/imported/player_wip.png-4cce0a40c6a5cb9cf9008a75d986521e.ctex"
+uid="uid://bfxofpl6ooty8"
+path="res://.godot/imported/Bullets.png-9e7ceb1ee9e151ded5de24d481f0c311.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/images/Entities/player/player_wip.png"
-dest_files=["res://.godot/imported/player_wip.png-4cce0a40c6a5cb9cf9008a75d986521e.ctex"]
+source_file="res://data/images/Entities/Projectiles/Bullets.png"
+dest_files=["res://.godot/imported/Bullets.png-9e7ceb1ee9e151ded5de24d481f0c311.ctex"]
 
 [params]
 
