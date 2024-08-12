@@ -1,16 +1,15 @@
 extends CharacterBody2D
 
-@export var Coyote_Time: float = 0.3
+@export var Coyote_Time: float = 0.05
 const JUMP_VELOCITY = -350.0
 const WALK = 150
-const RUN = 300
-const ACCELERATION = 10
+const RUN = 250
+const ACCELERATION = 7
 var	speed = 0
 var Jump_Available: bool = true
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
-
 var sprinting = false
 
 func _physics_process(delta):
