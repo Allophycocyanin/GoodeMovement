@@ -1,12 +1,9 @@
-[gd_scene load_steps=20 format=3 uid="uid://b5mpaein6sfpe"]
+[gd_scene load_steps=7 format=3 uid="uid://b5mpaein6sfpe"]
 
 [ext_resource type="Script" path="res://Scripts/level_1.gd" id="1_efgt4"]
 [ext_resource type="Texture2D" uid="uid://6qbxyqcncgd5" path="res://data/images/tiles/monochrome_tilemap_transparent.png" id="2_baw6s"]
-[ext_resource type="Script" path="res://Scripts/player.gd" id="3_0dl6a"]
-[ext_resource type="Texture2D" uid="uid://c0cdbmwh7qam2" path="res://data/images/Entities/player/player_wip.png" id="4_vd2bb"]
-[ext_resource type="Texture2D" uid="uid://by8j7j0137uej" path="res://data/images/Entities/player/yuki_walk_sheet_2.png" id="5_7xqvr"]
-[ext_resource type="Texture2D" uid="uid://ucw1tjrf8prx" path="res://data/images/Entities/player/yuki_walk_sheet.png" id="6_dah1w"]
 [ext_resource type="PackedScene" uid="uid://s2cyn1n5gkxu" path="res://Scene/Utility/Hud.tscn" id="7_yr2u3"]
+[ext_resource type="PackedScene" uid="uid://cdwp3wxk8djx" path="res://Scene/Player.tscn" id="8_5e2bu"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2iml7"]
 resource_name = "Tilemap"
@@ -1299,86 +1296,6 @@ separation = Vector2i(1, 1)
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_2iml7")
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_sdw6c"]
-size = Vector2(18, 16)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_xn64e"]
-atlas = ExtResource("5_7xqvr")
-region = Rect2(0, 0, 552, 777)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_mwxfx"]
-atlas = ExtResource("5_7xqvr")
-region = Rect2(552, 0, 552, 777)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_hrt4i"]
-atlas = ExtResource("5_7xqvr")
-region = Rect2(1104, 0, 552, 777)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_5nvrf"]
-atlas = ExtResource("5_7xqvr")
-region = Rect2(1656, 0, 552, 777)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_e373v"]
-atlas = ExtResource("6_dah1w")
-region = Rect2(0, 0, 450, 777)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_vscsd"]
-atlas = ExtResource("6_dah1w")
-region = Rect2(530, 0, 450, 777)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ncgtm"]
-atlas = ExtResource("6_dah1w")
-region = Rect2(1140, 0, 450, 777)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_30rk2"]
-atlas = ExtResource("6_dah1w")
-region = Rect2(1750, 0, 450, 777)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_lj04k"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("4_vd2bb")
-}],
-"loop": true,
-"name": &"fall",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_xn64e")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_mwxfx")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_hrt4i")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_5nvrf")
-}],
-"loop": true,
-"name": &"walk_left",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_e373v")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_vscsd")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ncgtm")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_30rk2")
-}],
-"loop": true,
-"name": &"walk_right",
-"speed": 3.0
-}]
-
 [node name="Level 1" type="Node2D"]
 script = ExtResource("1_efgt4")
 
@@ -1389,34 +1306,9 @@ collision_visibility_mode = 1
 format = 2
 layer_0/tile_data = PackedInt32Array(2293760, 1048576, 5, 2293761, 1048576, 5, 2293762, 1048576, 5, 2293763, 1048576, 5, 2293764, 1048576, 5, 2293765, 1048576, 5, 2293766, 1048576, 5, 2293767, 1048576, 5, 2293768, 1048576, 5, 2293769, 1048576, 5, 2293770, 1048576, 5, 2293771, 1048576, 5, 2293772, 1048576, 5, 2293773, 1048576, 5, 2293774, 1048576, 5, 2293775, 1048576, 5, 2293776, 1048576, 5, 2293777, 1114112, 5, 2359313, 1114112, 6, 2424849, 1114112, 6, 2490385, 1114112, 6, 2555921, 1114112, 6, 2621457, 1114112, 6, 2031627, 983040, 9, 2031628, 1048576, 9, 2031629, 1114112, 9, 2097163, 983040, 11, 2097164, 1048576, 11, 2097165, 1114112, 11, 2228230, 983040, 9, 2228231, 1048576, 9, 2228232, 1114112, 9, 2424853, 720896, 5, 2424854, 720896, 5, 2424855, 720896, 5, 2424856, 720896, 5, 2424857, 720896, 5, 2424858, 720896, 5, 2424859, 720896, 5, 2424860, 720896, 5, 2424861, 720896, 5, 2424862, 720896, 5, 2424863, 720896, 5, 2424864, 720896, 5, 2424865, 720896, 5, 2424852, 655360, 5, 2490388, 655360, 6, 2555924, 655360, 6, 2621460, 655360, 6, 2424866, 786432, 5, 2490402, 786432, 6, 2555938, 786432, 6, 2621474, 786432, 6, 2097184, 655360, 5, 2162720, 655360, 6, 2228256, 655360, 6, 2293792, 655360, 6, 2359328, 655360, 6, 2097185, 720896, 5, 2097186, 720896, 5, 2097187, 720896, 5, 2097188, 720896, 5, 2097189, 720896, 5, 2097190, 720896, 5, 2097191, 720896, 5, 2097192, 786432, 5, 2162728, 786432, 6, 2228264, 786432, 6, 2293800, 786432, 6, 2359336, 786432, 6, 2424872, 786432, 6, 2490408, 786432, 6, 2555944, 786432, 6, 2621480, 786432, 6, 2228228, 851968, 3, 2228240, 1048576, 0, 2228234, 1048576, 0, 2228238, 983040, 0, 2359295, 1048576, 19, 2293758, 917504, 18, 2359294, 917504, 19, 2293759, 1048576, 18, 2228222, 917504, 17, 2228223, 1048576, 17)
 
-[node name="Player" type="CharacterBody2D" parent="." groups=["Player"]]
-position = Vector2(12, 19)
-script = ExtResource("3_0dl6a")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Player" groups=["Player"]]
-position = Vector2(12, 533)
-shape = SubResource("RectangleShape2D_sdw6c")
-
-[node name="Camera2D" type="Camera2D" parent="Player"]
-position = Vector2(12, 520)
-zoom = Vector2(4, 4)
-drag_horizontal_enabled = true
-drag_vertical_enabled = true
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Player"]
-position = Vector2(12, 533)
-scale = Vector2(1, 1.025)
-sprite_frames = SubResource("SpriteFrames_lj04k")
-animation = &"fall"
-
-[node name="Area2D" type="Area2D" parent="Player"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Player/Area2D" groups=["Player"]]
-position = Vector2(12, 533)
-shape = SubResource("RectangleShape2D_sdw6c")
-
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="Hud" parent="CanvasLayer" instance=ExtResource("7_yr2u3")]
 
-[connection signal="body_entered" from="Player/Area2D" to="Player" method="_on_area_2d_body_entered"]
+[node name="Player" parent="." instance=ExtResource("8_5e2bu")]
+position = Vector2(39, 546)

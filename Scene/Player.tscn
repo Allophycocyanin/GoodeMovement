@@ -1,11 +1,12 @@
-[gd_scene load_steps=14 format=3 uid="uid://cdwp3wxk8djx"]
+[gd_scene load_steps=16 format=3 uid="uid://cdwp3wxk8djx"]
 
 [ext_resource type="Texture2D" uid="uid://c0cdbmwh7qam2" path="res://data/images/Entities/player/player_wip.png" id="1_jffpu"]
+[ext_resource type="Script" path="res://Scripts/player.gd" id="1_rk6fg"]
 [ext_resource type="Texture2D" uid="uid://by8j7j0137uej" path="res://data/images/Entities/player/yuki_walk_sheet_2.png" id="2_vjnl4"]
 [ext_resource type="Texture2D" uid="uid://ucw1tjrf8prx" path="res://data/images/Entities/player/yuki_walk_sheet.png" id="3_ey72m"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_i4ep8"]
-size = Vector2(18, 16)
+size = Vector2(18, 17)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_xn64e"]
 atlas = ExtResource("2_vjnl4")
@@ -84,7 +85,11 @@ animations = [{
 "speed": 3.0
 }]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_grl2e"]
+size = Vector2(15, 18)
+
 [node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_rk6fg")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." groups=["Player"]]
 shape = SubResource("RectangleShape2D_i4ep8")
@@ -101,5 +106,6 @@ animation = &"fall"
 
 [node name="Area2D" type="Area2D" parent="."]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" groups=["Player"]]
-shape = SubResource("RectangleShape2D_i4ep8")
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0, -0.82)
+shape = SubResource("RectangleShape2D_grl2e")
