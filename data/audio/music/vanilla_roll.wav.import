@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://b3tmpkdj1yfh"
-path="res://.godot/imported/vanilla_roll.wav-f422d70990cfc5cacc23defd79fcbcbd.sample"
+path="res://.godot/imported/vanilla_roll.wav-b0b9d87eea136877ff05472dce419c28.sample"
 
 [deps]
 
-source_file="res://data/audio/music/vanilla_roll.wav"
-dest_files=["res://.godot/imported/vanilla_roll.wav-f422d70990cfc5cacc23defd79fcbcbd.sample"]
+source_file="res://Data/audio/music/vanilla_roll.wav"
+dest_files=["res://.godot/imported/vanilla_roll.wav-b0b9d87eea136877ff05472dce419c28.sample"]
 
 [params]
 

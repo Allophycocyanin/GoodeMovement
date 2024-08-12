@@ -1,6 +1,6 @@
 extends Node2D
 
-var menu_music = load("res://data/audio/music/thumping_around.wav")
+var menu_music = load("res://Data/audio/music/Tall Tale.wav")
 var level_01_music = load('res://data/audio/music/vanilla_roll.wav')
 # Called when the node enters the scene tree for the first time.
 func _ready():
