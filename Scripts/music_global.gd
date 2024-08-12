@@ -17,6 +17,7 @@ func stop_music():
 
 func play_music_01():
 	$Music.stream = level_01_music
+	
 	$Music.play()
 
 func stop_music_01():

@@ -1,8 +1,8 @@
 [gd_scene load_steps=5 format=3 uid="uid://dnj3fg52313ts"]
 
 [ext_resource type="Script" path="res://Scripts/Ship.gd" id="1_q3jth"]
-[ext_resource type="Texture2D" uid="uid://bcqgtkh3edygj" path="res://data/images/Entities/player/P-green-a.png" id="2_appi8"]
-[ext_resource type="Texture2D" uid="uid://hbwjeignfhah" path="res://data/images/Entities/player/CharOne.png" id="3_fktwi"]
+[ext_resource type="Texture2D" uid="uid://bcqgtkh3edygj" path="res://Data/images/Entities/player/P-green-a.png" id="2_appi8"]
+[ext_resource type="Texture2D" uid="uid://hbwjeignfhah" path="res://Data/images/Entities/player/CharOne.png" id="3_fktwi"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5vswb"]
 size = Vector2(41.5, 39.5)
