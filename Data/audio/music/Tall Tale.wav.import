@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://biwqqg4a8gjeb"
+path="res://.godot/imported/Tall Tale.wav-d8a829af5badb16c1e4db2447c9775eb.sample"
+
+[deps]
+
+source_file="res://Data/audio/music/Tall Tale.wav"
+dest_files=["res://.godot/imported/Tall Tale.wav-d8a829af5badb16c1e4db2447c9775eb.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0
