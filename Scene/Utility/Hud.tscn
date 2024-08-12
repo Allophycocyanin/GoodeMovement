@@ -14,6 +14,7 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="Bars" type="HBoxContainer" parent="."]
+layout_mode = 0
 offset_left = 33.0
 offset_top = 15.0
 offset_right = 1083.0
@@ -22,7 +23,7 @@ theme_override_constants/separation = 50
 
 [node name="ExpBar" type="TextureProgressBar" parent="Bars"]
 layout_mode = 2
-value = 90.0
+value = 100.0
 texture_under = ExtResource("1_3sp2x")
 texture_progress = ExtResource("2_1dwyw")
 

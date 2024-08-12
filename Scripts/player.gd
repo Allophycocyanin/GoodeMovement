@@ -46,6 +46,7 @@ func _physics_process(delta):
 	
 	# player_animation()
 	move_and_slide()
+	#player_animation()
 	
 	# Handles Movement Animation
 func player_animation():

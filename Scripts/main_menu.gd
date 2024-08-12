@@ -15,11 +15,11 @@ func _process(delta):
 
 func _on_start_button_pressed():
 	MusicGlobal.stop_music()
-	get_tree().change_scene_to_file('res://Scene/level_1.tscn')
+	get_tree().change_scene_to_file('res://Scene/Levels/level_1.tscn')
 	MusicGlobal.play_music_01()
 	
 func _on_settings_button_pressed():
-	get_tree().change_scene_to_file('res://Scene/settings_menu.tscn')
+	get_tree().change_scene_to_file('res://Scene/Utility/settings_menu.tscn')
 
 func _on_quit_button_pressed():
 	get_tree().quit()

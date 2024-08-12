@@ -1,16 +1,16 @@
 [gd_scene load_steps=20 format=3 uid="uid://b5mpaein6sfpe"]
 
-[ext_resource type="Script" path="res://Scripts/level_1.gd" id="1_biv20"]
-[ext_resource type="Texture2D" uid="uid://6qbxyqcncgd5" path="res://data/images/tiles/monochrome_tilemap_transparent.png" id="3_djg1w"]
-[ext_resource type="Script" path="res://Scripts/player.gd" id="3_x2dc2"]
-[ext_resource type="Texture2D" uid="uid://by8j7j0137uej" path="res://data/images/Entities/player/yuki_walk_sheet_2.png" id="5_p8hdd"]
-[ext_resource type="Texture2D" uid="uid://ucw1tjrf8prx" path="res://data/images/Entities/player/yuki_walk_sheet.png" id="5_tieis"]
-[ext_resource type="Texture2D" uid="uid://c0cdbmwh7qam2" path="res://data/images/Entities/player/player_wip.png" id="5_wukm8"]
-[ext_resource type="PackedScene" uid="uid://s2cyn1n5gkxu" path="res://Scene/Hud.tscn" id="8_ksc0k"]
+[ext_resource type="Script" path="res://Scripts/level_1.gd" id="1_efgt4"]
+[ext_resource type="Texture2D" uid="uid://6qbxyqcncgd5" path="res://data/images/tiles/monochrome_tilemap_transparent.png" id="2_baw6s"]
+[ext_resource type="Script" path="res://Scripts/player.gd" id="3_0dl6a"]
+[ext_resource type="Texture2D" uid="uid://c0cdbmwh7qam2" path="res://data/images/Entities/player/player_wip.png" id="4_vd2bb"]
+[ext_resource type="Texture2D" uid="uid://by8j7j0137uej" path="res://data/images/Entities/player/yuki_walk_sheet_2.png" id="5_7xqvr"]
+[ext_resource type="Texture2D" uid="uid://ucw1tjrf8prx" path="res://data/images/Entities/player/yuki_walk_sheet.png" id="6_dah1w"]
+[ext_resource type="PackedScene" uid="uid://s2cyn1n5gkxu" path="res://Scene/Utility/Hud.tscn" id="7_yr2u3"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2iml7"]
 resource_name = "Tilemap"
-texture = ExtResource("3_djg1w")
+texture = ExtResource("2_baw6s")
 separation = Vector2i(1, 1)
 1:0/0 = 0
 1:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
@@ -1303,42 +1303,42 @@ sources/0 = SubResource("TileSetAtlasSource_2iml7")
 size = Vector2(18, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_xn64e"]
-atlas = ExtResource("5_p8hdd")
+atlas = ExtResource("5_7xqvr")
 region = Rect2(0, 0, 552, 777)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_mwxfx"]
-atlas = ExtResource("5_p8hdd")
+atlas = ExtResource("5_7xqvr")
 region = Rect2(552, 0, 552, 777)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_hrt4i"]
-atlas = ExtResource("5_p8hdd")
+atlas = ExtResource("5_7xqvr")
 region = Rect2(1104, 0, 552, 777)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_5nvrf"]
-atlas = ExtResource("5_p8hdd")
+atlas = ExtResource("5_7xqvr")
 region = Rect2(1656, 0, 552, 777)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_e373v"]
-atlas = ExtResource("5_tieis")
+atlas = ExtResource("6_dah1w")
 region = Rect2(0, 0, 450, 777)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_vscsd"]
-atlas = ExtResource("5_tieis")
+atlas = ExtResource("6_dah1w")
 region = Rect2(530, 0, 450, 777)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ncgtm"]
-atlas = ExtResource("5_tieis")
+atlas = ExtResource("6_dah1w")
 region = Rect2(1140, 0, 450, 777)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_30rk2"]
-atlas = ExtResource("5_tieis")
+atlas = ExtResource("6_dah1w")
 region = Rect2(1750, 0, 450, 777)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_lj04k"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("5_wukm8")
+"texture": ExtResource("4_vd2bb")
 }],
 "loop": true,
 "name": &"fall",
@@ -1380,7 +1380,7 @@ animations = [{
 }]
 
 [node name="Level 1" type="Node2D"]
-script = ExtResource("1_biv20")
+script = ExtResource("1_efgt4")
 
 [node name="TileMap" type="TileMap" parent="." groups=["Wall"]]
 texture_filter = 1
@@ -1391,7 +1391,7 @@ layer_0/tile_data = PackedInt32Array(2293760, 1048576, 5, 2293761, 1048576, 5, 2
 
 [node name="Player" type="CharacterBody2D" parent="." groups=["Player"]]
 position = Vector2(12, 19)
-script = ExtResource("3_x2dc2")
+script = ExtResource("3_0dl6a")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player" groups=["Player"]]
 position = Vector2(12, 533)
@@ -1417,6 +1417,6 @@ shape = SubResource("RectangleShape2D_sdw6c")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
-[node name="Hud" parent="CanvasLayer" instance=ExtResource("8_ksc0k")]
+[node name="Hud" parent="CanvasLayer" instance=ExtResource("7_yr2u3")]
 
 [connection signal="body_entered" from="Player/Area2D" to="Player" method="_on_area_2d_body_entered"]
