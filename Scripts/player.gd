@@ -45,7 +45,7 @@ func _physics_process(delta):
 			velocity.y = JUMP_VELOCITY
 
 	#==============================================================================================
-	# Decceleration
+	# Idle Decceleration
 	#==============================================================================================
 	if (direction == 0.0 && speed > 0):
 		speed -=ACCELERATION
@@ -54,27 +54,19 @@ func _physics_process(delta):
 	#==============================================================================================
 	# Horizontal Movement Manager
 	#==============================================================================================
-	if((velocity.x > 0 && direction < 0.0) || (velocity.x < 0 && direction > 0.0)):
-		if(speed > 0 ):
-			speed -= ACCELERATION * 3
-			
-			
-	if sprint_pressed:
-		if	(speed <= RUN && (direction > 0.0 || direction < 0.0)):
-			speed += ACCELERATION*2
+	if  sprint_pressed:
+		if(direction < 0.0 && speed > -RUN):
+			speed -= ACCELERATION * 2
+		if(direction > 0.0 && speed < RUN):
+			speed += ACCELERATION * 2
 	else:
-		# Walk speed
-		# Speed increases if moving in specified direction L|R
-		if	(speed <= WALK && (direction > 0.0 || direction < 0.0)):
+		if(direction < 0.0 && speed > -WALK):
+			speed -= ACCELERATION
+		if(direction > 0.0 && speed < WALK):
 			speed += ACCELERATION
-	
-	#==============================================================================================
-	# Turning 
-	#==============================================================================================
-	
 
 	# Sets the players X Velocity
-	velocity.x = speed * direction
+	velocity.x = speed
 	#print("X: ", velocity.x, ", Speed: ", speed, ", Direction: ", direction)
 	move_and_slide()
 

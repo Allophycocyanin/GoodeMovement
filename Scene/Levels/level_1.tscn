@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=3 uid="uid://b5mpaein6sfpe"]
 
 [ext_resource type="Script" path="res://Scripts/level_1.gd" id="1_efgt4"]
-[ext_resource type="Texture2D" uid="uid://6qbxyqcncgd5" path="res://Data/images/tiles/monochrome_tilemap_transparent.png" id="2_baw6s"]
+[ext_resource type="Texture2D" uid="uid://6qbxyqcncgd5" path="res://data/images/tiles/monochrome_tilemap_transparent.png" id="2_baw6s"]
 [ext_resource type="PackedScene" uid="uid://s2cyn1n5gkxu" path="res://Scene/Utility/Hud.tscn" id="7_yr2u3"]
 [ext_resource type="PackedScene" uid="uid://n0p0vacrufdo" path="res://Scene/Player.tscn" id="8_5e2bu"]
 
