@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://dqavlc67ulh2a"
-path="res://.godot/imported/tall_tale.wav-7894d1b7700adb7b109ab8893e507406.sample"
+path="res://.godot/imported/tall_tale.wav-370dd70ffd6449d375be245ae552937a.sample"
 
 [deps]
 
-source_file="res://data/audio/music/tall_tale.wav"
-dest_files=["res://.godot/imported/tall_tale.wav-7894d1b7700adb7b109ab8893e507406.sample"]
+source_file="res://Data/audio/music/tall_tale.wav"
+dest_files=["res://.godot/imported/tall_tale.wav-370dd70ffd6449d375be245ae552937a.sample"]
 
 [params]
 
