@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://fcmbtpo3de5v"
-path="res://.godot/imported/ThinFont.ttf-37e0ba6f3d751cc5f62bc25e45dd7c92.fontdata"
+path="res://.godot/imported/ThinFont.ttf-4f3cce03448f04440fa463514b48a5de.fontdata"
 
 [deps]
 
-source_file="res://data/font/ThinFont.ttf"
-dest_files=["res://.godot/imported/ThinFont.ttf-37e0ba6f3d751cc5f62bc25e45dd7c92.fontdata"]
+source_file="res://Data/font/ThinFont.ttf"
+dest_files=["res://.godot/imported/ThinFont.ttf-4f3cce03448f04440fa463514b48a5de.fontdata"]
 
 [params]
 
