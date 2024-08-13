@@ -65,9 +65,16 @@ func _physics_process(delta):
 		if(direction > 0.0 && speed < WALK):
 			speed += ACCELERATION
 
+	
+	#==============================================================================================
+	# Turning 
+	#==============================================================================================
+	
+
 	# Sets the players X Velocity
 	velocity.x = speed
 	#print("X: ", velocity.x, ", Speed: ", speed, ", Direction: ", direction)
+	player_animation()
 	move_and_slide()
 
 #==================================================================================================
@@ -81,8 +88,14 @@ func Coyote_Timeout():
 #==================================================================================================
 func player_animation():
 	if velocity.x > 0:
-		$AnimatedSprite2D.play("walk_right")
+		$AnimatedSprite2D.flip_h = false
+		$AnimatedSprite2D.play('Mousely_walk_right')
 	elif velocity.x < 0:
-		$AnimatedSprite2D.play('walk_left')
+		$AnimatedSprite2D.flip_h = true
+		$AnimatedSprite2D.play('Mousely_walk_left')
+	elif velocity.y < 0:
+		$AnimatedSprite2D.play('Mousely_fall')
+	elif velocity.y > 0:
+		$AnimatedSprite2D.play('Mousely_fall')
 	else:
-		$AnimatedSprite2D.play('fall')
+		$AnimatedSprite2D.play('Mousely_idle')
