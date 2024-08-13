@@ -33,7 +33,6 @@ func _physics_process(delta):
 	
 	# Checks if the sprint key is being pressed
 	var sprint_pressed = Input.is_action_pressed('sprint')
-	print(sprint_pressed)
 	
 	#==============================================================================================
 	# Jump Manager
@@ -51,6 +50,7 @@ func _physics_process(delta):
 	if (direction == 0.0 && speed > 0):
 		speed -=ACCELERATION
 	
+	
 	#==============================================================================================
 	# Horizontal Movement Manager
 	#==============================================================================================
@@ -60,16 +60,20 @@ func _physics_process(delta):
 			
 			
 	if sprint_pressed:
-		print("I am sprinting")
 		if	(speed <= RUN && (direction > 0.0 || direction < 0.0)):
 			speed += ACCELERATION*2
 	else:
 		# Walk speed
 		# Speed increases if moving in specified direction L|R
-		print("I am walking")
 		if	(speed <= WALK && (direction > 0.0 || direction < 0.0)):
 			speed += ACCELERATION
-		
+	
+	#==============================================================================================
+	# Turning 
+	#==============================================================================================
+	
+
+	# Sets the players X Velocity
 	velocity.x = speed * direction
 	#print("X: ", velocity.x, ", Speed: ", speed, ", Direction: ", direction)
 	move_and_slide()
