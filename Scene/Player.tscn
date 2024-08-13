@@ -1,9 +1,9 @@
 [gd_scene load_steps=16 format=3 uid="uid://cdwp3wxk8djx"]
 
-[ext_resource type="Texture2D" uid="uid://c0cdbmwh7qam2" path="res://Data/images/Entities/player/player_wip.png" id="1_jffpu"]
+[ext_resource type="Texture2D" uid="uid://c0cdbmwh7qam2" path="res://data/images/Entities/player/player_wip.png" id="1_jffpu"]
 [ext_resource type="Script" path="res://Scripts/player.gd" id="1_rk6fg"]
-[ext_resource type="Texture2D" uid="uid://by8j7j0137uej" path="res://Data/images/Entities/player/yuki_walk_sheet_2.png" id="2_vjnl4"]
-[ext_resource type="Texture2D" uid="uid://ucw1tjrf8prx" path="res://Data/images/Entities/player/yuki_walk_sheet.png" id="3_ey72m"]
+[ext_resource type="Texture2D" uid="uid://by8j7j0137uej" path="res://data/images/Entities/player/yuki_walk_sheet_2.png" id="2_vjnl4"]
+[ext_resource type="Texture2D" uid="uid://ucw1tjrf8prx" path="res://data/images/Entities/player/yuki_walk_sheet.png" id="3_ey72m"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_i4ep8"]
 size = Vector2(18, 17)
