@@ -2,13 +2,18 @@
 
 importer="wav"
 type="AudioStreamWAV"
+<<<<<<< HEAD
 uid="uid://bqob32qmymb8x"
 path="res://.godot/imported/Tall Tale.wav-d8a829af5badb16c1e4db2447c9775eb.sample"
+=======
+uid="uid://biwqqg4a8gjeb"
+path="res://.godot/imported/Tall Tale.wav-f4023f86a9995470a8898582cde5fc11.sample"
+>>>>>>> Ethan
 
 [deps]
 
-source_file="res://Data/audio/music/Tall Tale.wav"
-dest_files=["res://.godot/imported/Tall Tale.wav-d8a829af5badb16c1e4db2447c9775eb.sample"]
+source_file="res://data/audio/music/Tall Tale.wav"
+dest_files=["res://.godot/imported/Tall Tale.wav-f4023f86a9995470a8898582cde5fc11.sample"]
 
 [params]
 
