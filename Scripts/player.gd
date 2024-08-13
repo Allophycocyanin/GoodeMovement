@@ -70,7 +70,6 @@ func _physics_process(delta):
 
 	# Sets the players X Velocity
 	velocity.x = speed
-	print("X: ", velocity.x, ", Speed: ", speed, ", Direction: ", direction)
 	move_and_slide()
 
 #==================================================================================================
