@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://cvhp6sem7wod2"
-path="res://.godot/imported/thumping_around.wav-6a83e779003b70ca257e76b98396672b.sample"
+path="res://.godot/imported/thumping_around.wav-d130e86824a05adc4fce78a584b243a0.sample"
 
 [deps]
 
-source_file="res://data/audio/music/thumping_around.wav"
-dest_files=["res://.godot/imported/thumping_around.wav-6a83e779003b70ca257e76b98396672b.sample"]
+source_file="res://Data/audio/music/thumping_around.wav"
+dest_files=["res://.godot/imported/thumping_around.wav-d130e86824a05adc4fce78a584b243a0.sample"]
 
 [params]
 
