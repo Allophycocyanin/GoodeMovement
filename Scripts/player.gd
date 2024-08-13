@@ -10,8 +10,7 @@ const RUN = 250
 const ACCELERATION = 7
 var	speed = 0
 var Jump_Available: bool = true
-var sprinting = false
-
+var flip: bool = false
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 
@@ -32,14 +31,16 @@ func _physics_process(delta):
 	var direction: float = Input.get_action_strength("move_right") \
 					- Input.get_action_strength("move_left")
 	
-	var sprint_pressed = Input.is_action_just_pressed('sprint')
+	# Checks if the sprint key is being pressed
+	var sprint_pressed = Input.is_action_pressed('sprint')
+	print(sprint_pressed)
 	
 	#==============================================================================================
 	# Jump Manager
 	#==============================================================================================
 	if Input.is_action_just_pressed("jump") and Jump_Available:
 		Jump_Available = false
-		if sprinting:
+		if sprint_pressed:
 			velocity.y = JUMP_VELOCITY - ACCELERATION
 		else:
 			velocity.y = JUMP_VELOCITY
@@ -48,34 +49,35 @@ func _physics_process(delta):
 	# Decceleration
 	#==============================================================================================
 	if (direction == 0.0 && speed > 0):
-		print("direction detected")
-		speed = speed - ACCELERATION
-		print("new speed ", speed)
+		speed -=ACCELERATION
 	
 	#==============================================================================================
 	# Sprint Manager
 	#==============================================================================================
 	if sprint_pressed:
-		sprinting = true
-	elif Input.is_action_just_released('sprint'):
-		sprinting = false
-
-	if sprinting:
-		if	(speed <= RUN):
-			speed += ACCELERATION
-		velocity.x = direction * speed
+		print("I am sprinting")
+		if	(speed <= RUN && (direction > 0.0 || direction < 0.0)):
+			speed += ACCELERATION*2
 	else:
+		# Walk speed
+		# Speed increases if moving in specified direction L|R
+		print("I am walking")
 		if	(speed <= WALK && (direction > 0.0 || direction < 0.0)):
 			speed += ACCELERATION
-		velocity.x = direction * speed
 		
-	print("X: ", velocity.x, ", Speed: ", speed, ", Direction: ", direction)
+	velocity.x = speed * direction
+	#print("X: ", velocity.x, ", Speed: ", speed, ", Direction: ", direction)
 	move_and_slide()
 
+#==================================================================================================
+# Coyote Time
+#==================================================================================================
 func Coyote_Timeout():
 	Jump_Available = false
 	
-	# Handles Movement Animation
+#==================================================================================================
+# Animation Handler
+#==================================================================================================
 func player_animation():
 	if velocity.x > 0:
 		$AnimatedSprite2D.play("walk_right")
