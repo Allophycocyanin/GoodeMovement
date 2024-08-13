@@ -47,8 +47,11 @@ func _physics_process(delta):
 	#==============================================================================================
 	# Idle Decceleration
 	#==============================================================================================
-	if (direction == 0.0 && speed > 0):
-		speed -=ACCELERATION
+	if (direction == 0.0 && speed != 0):
+		if(speed < 0):
+			speed += ACCELERATION
+		if(speed > 0):
+			speed -= ACCELERATION
 	
 	
 	#==============================================================================================
@@ -73,8 +76,6 @@ func _physics_process(delta):
 
 	# Sets the players X Velocity
 	velocity.x = speed
-	#print("X: ", velocity.x, ", Speed: ", speed, ", Direction: ", direction)
-	player_animation()
 	move_and_slide()
 
 #==================================================================================================
