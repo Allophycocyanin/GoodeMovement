@@ -21,7 +21,7 @@ Player
 				Level 3 - 5 dash - star
 				Level 4 - 7 dash - super star
 			look at /images/dash_patterns.png for example
-			i frames while in dash 
+			i frames while in dash
 		Explosion
 			Explosion that has massive blow back to send player flying in
 			opposite direction
