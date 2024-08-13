@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://Scripts/level_1.gd" id="1_efgt4"]
 [ext_resource type="Texture2D" uid="uid://6qbxyqcncgd5" path="res://data/images/tiles/monochrome_tilemap_transparent.png" id="2_baw6s"]
 [ext_resource type="PackedScene" uid="uid://s2cyn1n5gkxu" path="res://Scene/Utility/Hud.tscn" id="7_yr2u3"]
-[ext_resource type="PackedScene" uid="uid://cdwp3wxk8djx" path="res://Scene/Player.tscn" id="8_5e2bu"]
+[ext_resource type="PackedScene" uid="uid://n0p0vacrufdo" path="res://Scene/Player.tscn" id="8_5e2bu"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2iml7"]
 resource_name = "Tilemap"
